@@ -19,12 +19,6 @@ It showcases delicious products, an engaging home page, an interactive order for
 - HTML5  
 - CSS3  
 
- 📸 Preview
-
-> _Coming soon!_ (You can host it using GitHub Pages and add your site link here)
-
----
-
  🚀 How to Use
 
 1. Clone the repository:
