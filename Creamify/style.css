@@ -1,0 +1,138 @@
+*{
+    margin:20px;
+   
+    text-align: center;
+   
+   
+}
+
+
+
+.home {
+    text-align: center;
+    padding-top: 20px;
+
+    
+    background-image: url('back2.avif'); 
+    background-size: cover;
+    background-position: center;
+    padding-top: 100px ;
+    padding-bottom: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.home h1 {
+  animation: slideDown 2s ease;
+}
+
+
+
+ul,li{
+    display:inline
+}
+
+li {
+  color: black;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px white;
+  cursor: pointer;
+  
+  padding-top:50px;
+}
+
+
+li:hover{
+    color:blue;
+
+}
+.about{
+    text-align:center;
+
+}
+
+
+.products{
+    text-align:center;
+
+}
+.box {
+  text-align: center;
+}
+
+.item {
+  display: inline-block;
+  margin: 10px;
+}
+
+
+.products img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+ 
+ box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+
+}
+
+
+.products img {
+    width: 200px;    
+    height: 200px;  
+    object-fit: cover;
+    margin: 10px;    
+    
+}
+
+.ordersection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.ordertext {
+  max-width: 400px;
+}
+
+
+.sideimg {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+.order{
+    text-align: center;
+}
+
+.contact{
+    text-align: center;
+}
+
+.form{
+    text-align: center;
+    padding:10px;
+    margin-left:33%;
+}
