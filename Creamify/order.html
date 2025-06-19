@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+ <style>
+ 
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fdf4f0;
+  margin: 0;
+  padding: 0;
+  color: #4e2c27;
+}
+
+h1, h3 {
+  text-align: center;
+  padding: 10px;
+}
+
+.emoji {
+  text-align: center;
+  font-size: 28px;
+  margin: 20px 0;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+table {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 600px;
+}
+
+td {
+  padding: 12px 15px;
+  font-size: 16px;
+  vertical-align: top;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+}
+
+input::placeholder {
+  color: #888;
+  font-size: 13px;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f67280;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #c94f64;
+}
+
+@media screen and (max-width: 768px) {
+  table {
+    width: 90%;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <h1>🍨 PLACE YOUR ORDER NOW</h1>
+  <h3>Craving something sweet? You're just a few clicks away from your dream scoop!<br>
+    😋 Fill in your details, choose your favorite flavors, pick your toppings, and we’ll take care of the rest! 💌</h3>
+
+  <div class="emoji">🍦 🍫 🍒 🍓</div>
+
+  <div class="form">
+    <form>
+      <table>
+        <tr>
+          <td>NAME</td>
+          <td><input type="text" placeholder="Enter your name" required></td>
+        </tr>
+        <tr>
+          <td>MOBILE</td>
+          <td><input type="number" placeholder="Enter your number" required></td>
+        </tr>
+        <tr>
+          <td>ADDRESS</td>
+          <td><input type="text" placeholder="Enter your location" required></td>
+        </tr>
+        <tr>
+          <td>TYPE</td>
+          <td>
+            <select required>
+              <option>CHOCOLATE 🍨</option>
+              <option>VANILLA 🍨</option>
+              <option>STRAWBERRY 🍨</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>TOPPINGS & FLAVORS 🍒</td>
+          <td><input type="text" placeholder="Customize your flavors" required></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="submit" value="Order Now 🧁"></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+
+  <div class="emoji">🍦 🍫 🍒 🍓</div>
+
+</body>
+</html>
