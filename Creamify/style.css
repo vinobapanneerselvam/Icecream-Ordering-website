@@ -10,9 +10,10 @@ body {
 
 @import url('https://fonts.googleapis.com/css2?family=Chewy&family=Poppins&display=swap');
 
-/* Home Section Styles */
 
-/* Reset & Font */
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -25,7 +26,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Header */
+
 .main-header {
   background-color: #fff;
   padding: 20px 40px;
@@ -62,7 +63,7 @@ body {
   color: #ff4081;
 }
 
-/* Hero Section */
+
 .hero-section {
   display: flex;
   align-items: center;
@@ -102,7 +103,7 @@ body {
   background-color: #f50057;
 }
 
-/* Hero Image */
+
 .hero-image {
   flex: 1;
   display: flex;
