@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>All Orders - Admin Panel</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff8f5;
+      padding: 20px;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      color: #d63384;
+      margin-bottom: 30px;
+    }
+
+    table {
+      width: 90%;
+      margin: 0 auto;
+      border-collapse: collapse;
+      background-color: #ffffff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 14px 16px;
+      text-align: left;
+      border-bottom: 1px solid #eee;
+    }
+
+    th {
+      background-color: #ff69b4;
+      color: white;
+    }
+
+    tr:hover {
+      background-color: #f9e1e9;
+    }
+
+    .center {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .btn-refresh {
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .btn-refresh:hover {
+      background-color: #ff1493;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📋 Creamify Order Dashboard</h1>
+
+  <div class="center">
+    <button onclick="fetchOrders()" class="btn-refresh">🔁 Refresh Orders</button>
+  </div>
+
+  <br><br>
+
+  <table id="ordersTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Mobile</th>
+        <th>Address</th>
+        <th>Type</th>
+        <th>Toppings</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+
+  <script>
+    async function fetchOrders() {
+      const res = await fetch('http://localhost:5000/api/orders');
+      const data = await res.json();
+
+      const tableBody = document.querySelector('#ordersTable tbody');
+      tableBody.innerHTML = ''; 
+
+      data.forEach(order => {
+        const row = `
+          <tr>
+            <td>${order.id}</td>
+            <td>${order.name}</td>
+            <td>${order.mobile}</td>
+            <td>${order.address}</td>
+            <td>${order.type}</td>
+            <td>${order.toppings}</td>
+          </tr>
+        `;
+        tableBody.innerHTML += row;
+      });
+    }
+
+    window.onload = fetchOrders;
+  </script>
+
+</body>
+</html>
